@@ -1,0 +1,834 @@
+*{margin: 0; padding: 0; background: #E5E4E2}
+
+
+
+.MainPage{ /* this affects every page, it just create space at the bottom*/
+  margin-bottom: 100px;
+  background-color: #E5E4E2;
+}
+
+
+/* this is  for Navbar*/
+.navbar{
+  align-items: center;
+  display:flex;
+  justify-content: space-between;
+  background:#E0A96D;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.nav-logo{
+  background: #E0A96D;
+  color: #201E20;
+  font-size: 40px;
+  flex-grow: 1;
+  text-align: center;
+  margin-left: 65px;
+  font-weight: bold;
+}
+
+.navbar-menu{
+  list-style-type: none;
+  background: #E0A96D;
+}
+
+.navbar-menu li {
+  background: transparent;
+}
+
+.navbar-menu li:hover{
+  opacity: .6;
+}
+
+.navbar-menu li a {
+  color: #201E20;
+  padding: 8px 12px;
+  background: transparent;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+/*for bottom bar nav*/
+.botNavbar {
+  align-items: center;
+  display:flex;
+  justify-content: center;
+  background:#E0A96D;
+  padding: 1px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+
+.botNavbarMenu {
+  display: flex;
+  list-style-type: none;
+  gap: 90px;
+  align-items: center;
+  background: transparent;
+}
+
+.botNavbarMenu li {
+  background: transparent;
+}
+
+.botNavbarMenu li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #201E20;
+  padding: 8px 12px;
+  background: transparent;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.botNavbarMenu li:hover{
+  opacity: .6;
+}
+.botNavbarMenu li a svg{
+  margin-bottom: 10px;
+  background: transparent;
+  font-size: 30px;
+}
+
+/* this is  for styling create page*/
+
+.create-post {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.createPostSub{ /* this contains everything. the title, the upload button, pic, the post button*/
+  background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.header{
+  font-size: 50px;
+  margin-bottom: 10px;
+  background: transparent;
+}
+.createButton{
+  background-image: linear-gradient(30deg,#FEEAE6 10%, #F08000 60%);
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+.createButton label {
+  cursor: pointer;
+}
+
+.createButton label svg {
+  margin:10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(79deg,#FFE5B4 10%,#DBAE58 60%,#FCC133 );
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.createButton label svg:hover {
+  opacity: 0.8;/*This creates a visual effect of the image
+   becoming slightly transparent or faded when the user interacts with it?*/
+}
+.previewPicture{
+  background: transparent;
+}
+.previewPicture img{
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+.uploaded-image {
+  border: 1px solid black;
+  margin-top: 13px;
+  width: 550px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.clothingLinks {
+  background-color: transparent;
+}
+.clothingLinks textarea{
+  border-radius: 20px;
+  padding: 20px;
+  width: 500px;
+  resize: vertical;
+}
+
+.postButton{
+  background: transparent;
+}
+.postButton:hover{
+  opacity: 0.8;
+}
+.postButton button{
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 20px;
+  background:black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* this is  for styling profile page page*/
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.profile button:hover{
+  opacity: 0.8;
+}
+
+.userProfilePic {
+  position: relative;
+  max-width: 300px;
+  max-height: 300px;
+
+}
+
+.userProfilePic button {
+  position: relative;
+  border-radius: 50%;
+  height: 163px;
+  width: 163px;
+  border:2px solid black;
+  background-color: transparent; /* replace with your own image */
+  cursor: pointer;
+  z-index: 1;
+}
+
+.userProfilePic img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-49.7%, -50.8%);
+  height: 160px;
+  width: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.postCounter{
+  padding: 5px;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+.userNameAndBio {
+  border-radius: 20px;
+  padding: 15px 50px;
+  align-items: center;
+  justify-content: center;
+}
+.userNameAndBio form{
+  border-radius: 20px;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.userNameAndBio input{
+  border-radius: 10px;
+  padding: 5px;
+}
+.userNameAndBio label{
+  background: black;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.userNameAndBio button{
+  border-radius: 20px;
+  padding: 5px 15px;
+  background: black;
+  color: white;
+}
+
+.userProfileName{
+  text-align: center;
+  padding: 10px 70px;
+  background-color: transparent;
+  border-radius: 20px;
+}
+.userProfileBio{
+  text-align: center;
+  padding: 15px 70px;
+  background-color: transparent;
+  border-radius: 20px;
+}
+
+.edit-profile button {
+  font-size: 1em;
+  padding: 5px 15px;
+  border-radius: 10px;
+  margin: 10px;
+  color: #f2f2f2;
+  background-color: black;
+  cursor: pointer;
+}
+
+.updateBioMessage{
+  text-align: center;
+  background-color: transparent;
+}
+
+.user-post {
+  height: auto;
+  width: 90%;
+  padding: 30px;
+  background-color: lightgray;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.postSign {
+  text-align: center;
+  margin: 0 auto; /* Centers the postSign div horizontally */
+  width: 100%;
+}
+
+.postSign h4 {
+  background-color: lightgray;
+}
+
+.userPostPicHolder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.profileEachPic {
+  background-color: transparent;
+  width: calc(33.33% - 20px); /* Adjust the width to achieve three pictures per row */
+  margin-bottom: 20px; /* Add bottom margin to create gaps */
+}
+
+.profileEachPic img {
+  border-radius: 20px;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  background-color: transparent;
+}
+
+.profileCaption {
+  background-color: transparent;
+  margin-top: 10px; /* Add margin to create space between the image and the description */
+}
+
+
+/* this is the styling page for notification page*/
+.NotificationTitle{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 5px;
+  width:20%;
+  border: 2px solid black;
+  border-radius: 20px;
+  background: #C09F80;
+
+
+}
+.NotificationTitle h1{
+  background: transparent;
+}
+
+.notificationHolder {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  background: burlywood;
+  padding:20px;
+  border-radius:10px;
+}
+
+.notificationBox {
+  display: flex;
+  width: 60%;
+  height: 60%;
+  border-radius: 10px;
+  padding: 10px;
+  background: lightgray;
+  border: 2px solid black;
+}
+
+.userCircle {
+  width: 21px;
+  height: 21px;
+  border-radius: 50px;
+  padding: 20px;
+
+}
+
+.likedPost {
+  display: flex;
+  align-items: center;
+  background: darkgrey;
+  width: 90%;
+  height: 10%;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+.notificationUsername {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #cccccc;
+  border-radius: 20px;
+  width: 70%;
+  padding: 5%;
+}
+
+
+
+/*styling for settings page*/
+.notification-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.settingTitle h1{
+  background-color: #DBAE58;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: 20px;
+  border: solid black 2px;
+}
+
+.documentation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.documentation a{
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  background-color: transparent;
+  padding: 20px;
+  font-size: 20px;
+}
+.documentation button{
+  text-align: left;
+  font-size: 1em;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 50px;
+  background-color: #FFE5B4;
+
+}
+.documentation button:hover{
+  opacity: .5;
+}
+
+
+
+/*this is for the System Manual*/
+.systemManual {
+  padding: 50px;
+  background-color: lightyellow;
+  border-radius: 5px;
+  margin-bottom: 200px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.systemManual h1 {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.systemManual hr{
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 20px 0;
+}
+.systemManual h2{
+  background-color: transparent;
+}
+.systemManual h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+.systemManual p {
+  background-color: transparent;
+  font-size: 16px;
+  margin: 10px;
+  line-height: 1.5;
+}
+.systemManual li{
+  background-color: transparent;
+}
+
+
+/* this section is for the home page css*/
+
+.holder {
+  display: flex;
+  flex-direction: column;
+  max-width: 750px ;
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.eachPic{
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.username{
+  align-items: flex-start;
+  margin-bottom: 20px;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+
+.eachPic img{
+  border-radius: 10px;
+  max-width: 750px;
+  max-height: 1000px;
+  object-fit: cover;
+}
+
+.like-comment {
+  display: flex;
+  align-items: flex-start;
+  background-color: transparent;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 100px;
+}
+
+.like-comment button {
+  background-color:transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.like-comment button:hover{
+  opacity:0.7;
+}
+
+.like-comment svg{
+  margin-bottom: 10px;
+  font-size: 33px;
+  background-color: transparent;
+}
+
+.commentPopup{
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+.commentPopup form{
+
+  background-color: transparent;
+}
+.commentPopup label{
+
+  background-color: transparent;
+}
+.commentPopup input{
+  padding: 5px 250px;
+  background-color: white;
+  border-radius: 20px;
+}
+.commentPopup button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+}
+.commentPopup svg{
+  margin-left: 5px;
+  margin-bottom: -10px;
+  font-size: 30px;
+  background-color: transparent;
+  color: deepskyblue;
+}
+
+.caption{
+  font-size: 20px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.comments{
+  align-items: flex-start;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 17px;
+}
+.comment{
+  background-color: transparent;
+}
+.comment-text{
+  background-color: transparent;
+}
+.comment-author{
+  background-color: transparent;
+}
+.view-all-comments{
+  color: gray;
+  cursor: pointer;
+  background-color: transparent;
+}
+.view-all-comments:hover{
+  opacity:0.7;
+}
+
+
+/*about US page styling*/
+.teamSection { /*container for team section*/
+  display: flex;
+  justify-content: center;
+  margin-top: 50px
+}
+
+.teamMember { /*style for team member*/
+  margin-right: 20px;
+  text-align: center;
+  flex-basis: 25%;
+  flex-grow: 1;
+}
+.teamMemberImg{ /*styles for team member image*/
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.teamMemberP{ /*apply text styles for team section*/
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.pic-format {
+  height: 250px;
+  border: 2px solid black;
+
+}
+/* for the About us page*/
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background: #f2f2f2;
+  border-radius: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  background: #f2f2f2;
+}
+.container h1{
+  border-radius: 20px;
+}
+
+.contents {
+  background: #f2f2f2;
+  padding: 50px;
+  border-radius: 20px;
+  max-width: 800px;
+
+}
+.contents p{
+  background: #f2f2f2;
+}
+
+/*styling for login Page*/
+.Login-format {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 170vh;
+  background-image: linear-gradient(79deg,#FDF8F0 10%, #C09F80 50%, #E7DFDD)
+}
+.Login-nav {
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+}
+
+.Main-head {
+  font-size: 70px;
+  font-weight: bolder;
+  background-color: transparent;
+  text-align: center;
+  position: relative;
+  top: -200px;
+}
+.Main-head h1 {
+  background-color: transparent;
+}
+
+.Main-Login {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 2rem;
+
+  text-align: center;
+}
+
+.sub-head{
+  display: flex;
+  flex-direction: column;
+  font-size: 23px;
+  text-align: left;
+
+}
+.input-style {
+  width: 300px;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: #f2f2f2;
+}
+
+
+.AuthDet{
+  text-align: center;
+  border-radius: 20px;
+}
+
+.button-style:hover{
+  opacity: .4;
+}
+.signOutButton:hover{
+  opacity: .4;
+}
+
+.button-style {
+  border: 2px slategray solid;
+  background: white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+}
+.signOutButton{
+  border: 2px slategray solid;
+  background: white;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+.forgot-password-button{
+  border: none;
+  text-align: center;
+  color: blue;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 16px;
+  font-family: inherit;
+}
+.forgot-password-button:hover{
+  opacity: 0.5;
+
+}
+
+.newUserLink p {
+  text-align: center;
+  color: blue;
+  cursor: pointer;
+  padding: 5px;
+}
+.newUserLink p:hover{
+  opacity: 0.5;
+}
+
+.signOutButton{
+  border: 2px slategray solid;
+  background: white;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+.newUserLink p{
+  text-align: center;
+  color: blue;
+  cursor: pointer;
+  padding: 5px;
+
+}
+
